@@ -1,19 +1,26 @@
 *{box-sizing: border-box;}
 
-body{background: #EFEBE9;}
+  body{
+    background-image: url("background.jpg"); 
+}  
 
 #container{
     width:100%;
+    height: 100%;
     max-width:1400px;
-    margin:1em auto 1em auto;
+    margin:2em auto 2em auto;
+    background: rgb(255, 251, 248);
 }
+
+
 hr{color: #795548 ;}
 
-.container:after {
+#container:after {
     content: "";
     clear: both;
     display: table;
 }
+
 
 a{ color: #020d0c;}
 a:link, a.visited{ text-decoration: none;}
@@ -23,8 +30,7 @@ a:hover {
 }
 
 header{
-    border: #795548 solid 1px;
-    color: #e9faf8;
+    color: rgb(255, 251, 248);
     background: #4E342E;
     text-align: left;
     padding: 2em 0 0 2em;
@@ -39,9 +45,10 @@ header{
 
 .head{
     width:100%;
-    margin-left: 0.5%;
+    /*margin-left: 1%;*/
     color: #4E342E;
     font-size: 1.4em;
+    padding: 0 0 0 1em;
 }
 
 .button {
@@ -88,9 +95,9 @@ header{
 li{padding:0.4em;}
 
 [class*='col-'] {
-    border: #795548 solid 1px;
+    /*border: #795548 solid 1px;*/
     float: left;
-    background-color: #edf1f3;
+    /*background-color: #edf1f3;*/
     padding: 1em;
     width: 100%;
     margin-bottom:0.5em;
@@ -99,9 +106,9 @@ li{padding:0.4em;}
 }
 
 .row1 p{
-    border: #795548 solid 1px;
+   /* border: #795548 solid 1px;*/
     color:#020d0c;
-    background-color: #edf1f3;
+   /* xbackground-color: #edf1f3;*/
     text-align: justify;
     width: 100%;
     float: left;
@@ -115,7 +122,6 @@ img{
     border-radius: 2%;
     display: block;
     padding: 1em;
-    float: center;
     margin-left: auto;
     margin-right: auto;
     width: 216px;
@@ -126,7 +132,7 @@ img{
 @media screen and (min-width: 800px){
 
     [class*='col-']{
-        background-color: #e9edef;
+        /*background-color: #e9edef;*/
         color: #020d0c;
         font-size: 1.4em;
         margin-bottom: 1em;
@@ -138,18 +144,28 @@ img{
 
     [class*='col-E']{padding: 0.5em;}
 
+    .row1 p{
+        width: unset;
+        float:unset;
+        padding: unset;
+        font-size: unset;
+        text-align: unset;
+    }
     .row1{
-        border: #795548 solid 1px;
+        /*border: #795548 solid 1px;*/
         color:#020d0c;
-        background-color: #edf1f3;
+        /*background-color: #edf1f3;*/
         width: 100%;
         text-align: justify;
         float: left;
-        padding: 1.2em;
+        padding: 1em;
         font-size: 1.6em;
         margin-bottom: 1%;
     }
-    .row1 p{all:unset;}
+    .about{
+        padding-top: 1.5em;
+    }
+    
     
     li{padding:0.2em;}
 
